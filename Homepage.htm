@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>The Box Model</title>
+    <style>
+        .container {
+            background-color: white;
+            width: 960px;
+            margin: auto;
+        }
+
+        .header {
+            background-color: cyan;
+            padding: 10px;
+            text-align: center;
+            color:brown ;
+        }
+
+        .navbar {
+            background-color: red;
+            padding: 10px;
+            text-align: center;
+            color:brown ;
+            
+        }	
+            
+
+        .article {
+            background-color: chartreuse;
+            padding: 10px;
+            width: 560px;
+            height: 300px;
+            float: left;
+            margin-top: 20px;
+            margin-right: 20px;
+        }
+
+        .ad-sidebar {
+            
+            width: 340px;
+            height: 320px;
+            float: right;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+
+        .footer {
+            background-color: black;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="container">
+         
+        <div class="header">EGYPT<h3>The history of Egypt</h3></div>
+
+        <div class="navbar"><a href="second.htm">Second</a>
+<a href="third.htm">Third</a></div>
+
+        <div class="article"><p>Egypt (Arabic: مِصر, romanized: Miṣr, Egyptian Arabic pronunciation: [masˤr]), officially the Arab Republic of Egypt, is a transcontinental country spanning the northeast corner of Africa and southwest corner of Asia via a land bridge formed by the Sinai Peninsula. It is bordered by the Mediterranean Sea to the north, the Gaza Strip of Palestine and Israel to the northeast, the Red Sea to the east, Sudan to the south, and Libya to the west. The Gulf of Aqaba in the northeast separates Egypt from Jordan and Saudi Arabia. Cairo is the capital and largest city of Egypt, while Alexandria, the second-largest city, is an important industrial and tourist hub at the Mediterranean coast.[13] At approximately 100 million inhabitants, Egypt is the 14th-most populated country in the world.
+
+Egypt has one of the longest histories of any country, tracing its heritage along the Nile Delta back to the 6th–4th millennia BCE. Considered a cradle of civilisation, Ancient Egypt saw some of the earliest developments of writing, agriculture, urbanisation, organised religion and central government.[14] Iconic monuments such as the Giza Necropolis and its Great Sphinx, as well the ruins of Memphis, Thebes, Karnak, and the Valley of the Kings, reflect this legacy and remain a significant focus of scientific and popular interest.</div>
+
+        <div class="ad-sidebar"><img src="data:image/png;base64,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" width="340" ></div>
+         
+        <div class="footer"><p>Jonathan 12 years old resource:wikipedia</p></div>
+         
+    </div>
+
+</body>
+
+</html>
